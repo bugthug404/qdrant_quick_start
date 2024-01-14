@@ -1,17 +1,4 @@
-# import { Router } from "express";
-# import {
-#   createCollection,
-#   dynamicQueryCollection,
-#   queryCollection,
-# } from "./qdrant.service";
 
-# const qdrantData = Router();
-
-# qdrantData.get("/create-collection", createCollection);
-# qdrantData.get("/query-collection", queryCollection);
-# qdrantData.get("/dynamic-query-collection", dynamicQueryCollection);
-
-# export default qdrantData;
 from flask import Blueprint
 from .qdrant_service import create_collection, query_collection, dynamic_query_collection
 
